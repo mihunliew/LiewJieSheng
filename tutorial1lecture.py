@@ -1,4 +1,5 @@
 
+
 """Midpoint"""
 import streamlit as st
 import numpy as np
@@ -6,7 +7,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-
+fig = plt.figure(figsize=(10, 4))
+plt.title("Midpoint Line Algorithm")
+plt.xlabel("X-Axis")
+plt.ylabel("Y-Axis")
 def midpoint(ax, ay, bx, by):
   w = bx - ax
   h = by - ay
@@ -33,13 +37,10 @@ def midpoint(ax, ay, bx, by):
     ycoordinates.append(y)
     st.header(f"x = {x}, y = {y}")
     
-fig = plt.figure(figsize=(10, 4))
-plt.title("Midpoint Line Algorithm")
-plt.xlabel("X-Axis")
-plt.ylabel("Y-Axis")
-plt.plot(xcoordinates, ycoordinates)
-plt.show()
-st.pyplot(fig)
+
+  plt.plot(xcoordinates, ycoordinates)
+  plt.show()
+  st.pyplot(fig)
 
 if __name__=="__main__":
   print("Enter the starting point of x: ")
