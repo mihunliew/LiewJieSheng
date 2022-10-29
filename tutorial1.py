@@ -12,13 +12,13 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-print("Enter the value of x1: ")
+st.header("Enter the value of x1: ")
 x1 = int(input())
-print("Enter the value of x2: ")
+st.header("Enter the value of x2: ")
 x2 = int(input())
-print("Enter the value of y1: ")
+st.header("Enter the value of y1: ")
 y1 = int(input())
-print("Enter the value of y2: ")
+st.header("Enter the value of y2: ")
 y2 = int(input())
 
 dx = x2 - x1
@@ -80,7 +80,7 @@ ycoordinates = []
 x1 = sx1
 y1 = sy1
 
-print(x1,y1,x2,y2)
+st.header(x1,y1,x2,y2)
 dx = x2 - x1
 dy = y2 - y1
 
@@ -96,7 +96,7 @@ while x < x2:
   x += 1
   y = m*x + c
   iy = round(y)
-  print("X: ",x, "Y: ", y)
+  st.header("X: ",x, "Y: ", y)
   xcoordinates.append(x)
   ycoordinates.append(y)
 
@@ -126,7 +126,7 @@ def midpoint(x1, y1, x2, y2):
     x = x1
     y = y1
 
-    print(f"x = {x}, y = {y}")
+    st.header(f"x = {x}, y = {y}")
     # Initialize the plotting points
     xcoordinates = []
     ycoordinates = []
