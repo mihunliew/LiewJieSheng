@@ -7,6 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1BIOrSGK2olw5a2yYEG-OHq_SU46RJhLY
 """
 
+import streamlit as st
+import numpy as np
+import pandas as pd
+import seaborn as sns
 import matplotlib.pyplot as plt
 print("Enter the value of x1: ")
 x1 = int(input())
