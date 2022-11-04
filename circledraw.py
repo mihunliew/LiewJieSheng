@@ -83,7 +83,7 @@ if __name__ == '__main__':
 	
 	# To draw a circle of radius 3
 	# centered at (0, 0)
-	midPointCircleDraw(0, 0, 3)
+	midPointCircleDraw(0, 0, 10)
 
 
 # Contributed by: SHUBHAMSINGH10
